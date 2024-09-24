@@ -1,10 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { Input } from './components/Input';
+import { ButtonType } from './components/ButtonType';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+
+      <Text>Seja bem-vindo</Text>
+      
+      <Input name="E-mail"></Input>
+      <Input name="Senha"></Input>
+
+      <ButtonType name="Entrar"></ButtonType>
+      <ButtonType name="Cadastrar"></ButtonType>
+
       <StatusBar style="auto" />
     </View>
   );
